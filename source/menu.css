@@ -1,0 +1,387 @@
+    /*CSPB 3308 Rodrigo H. Garcia*/
+    /*10/18/2019*/
+
+
+    html
+    {
+        background-color: white;
+        margin:0;
+        padding: 1px;
+        background-color: #666
+
+    }
+
+    body
+    {
+        background-color:#666;
+        margin: 0;
+        height: 100%;
+        padding: 0px;
+    }
+
+    header
+    {
+        /*Used HTML5 standard header as a larger container for the smaller menu container for the lab*/
+    
+        
+        /*Used a Flex container to house other elements*/
+        display:flex;
+        justify-content: space-between;
+        height: 128px;
+        width: 100%;
+
+        /*Fixed and scrollable header*/
+        position: fixed;
+        z-index: 3;
+        overflow: hidden;
+        top: -4px;
+
+
+        /*Used a gradient pattern for the header background*/
+        background: #c9de96; 
+        background: -moz-linear-gradient(top, #c9de96 0%, #8ab66b 44%, #398235 100%); 
+        background: -webkit-linear-gradient(top, #c9de96 0%,#8ab66b 44%,#398235 100%); 
+        background: linear-gradient(to bottom, #c9de96 0%,#8ab66b 44%,#398235 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=0 ); 
+    }
+
+    .header-logo-container
+    {
+        padding: 2px; 
+        display: flex; 
+        align-items: center;
+    }
+
+
+    .header-banner-text
+    {
+        margin:10px;
+        height: 50px; 
+        text-align: center; 
+        font-size: 30px;
+        color: white;
+    }
+
+
+    /*More gradient patterns, radius and shadow effects*/
+
+    #css-file-link
+    {
+        margin: 10px; 
+        text-align: center; 
+        font-size: 30px;
+        box-shadow:inset 0px 1px 0px 0px #f9eca0;
+        background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+        background-color:#f0c911;
+        border-radius:6px;
+        border:1px solid #e65f44;
+        display:inline-block;
+        cursor:pointer;
+        color:#c92200;
+        font-family:Arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #ded17c;
+    }
+
+
+    #css-file-link:hover 
+    {
+    background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+    background-color:#f2ab1e;
+    }
+    
+    #css-file-link:active {
+    position:relative;
+    top:1px;
+    }
+
+
+
+
+
+
+
+
+    .menu-container
+    {
+        display: flex;
+        border: solid black 1px;
+        justify-content: center;
+        position: fixed;
+        right:10px;
+        top:20px;
+        background-color:black;
+     
+    }
+
+
+
+    /*Some fun with the menu boxes.  Lots of formatting*/
+     .menu-item
+    {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        width: 20%;
+
+
+        box-shadow:inset 0px -3px 7px 0px #29bbff;
+        background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+        background-color:#2dabf9;
+        border-radius:3px;
+        border:1px solid #0b0e07;
+        display:inline-block;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:15px;
+       
+    }
+
+    .menu-item:hover 
+    {
+        background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+        background-color:#0688fa;
+    }
+
+    .menu-item:active
+    {
+        background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+        background-color:#0688fa;
+    }
+
+
+
+    .menu-item-paragraph
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    a
+    {
+        color:#ffffff;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #263666;
+        cursor:pointer;
+    }
+
+    /*Made interactive elements for the floatig divs*/
+
+    .card-container
+    {
+        background-color: white;
+        margin: 0 0 auto;
+        height: 425px;
+        width:100%;
+        margin-top: 200px;
+
+    }
+
+
+
+    #card-1-front
+    {
+       
+       
+    }
+
+    #card-1-back
+    {
+        
+       
+    }
+
+    #card-2-front
+    {
+     
+       
+    }
+
+    #card-2-back
+    {
+        
+       
+    }
+
+
+    #card-3-front
+    {
+       
+       
+    }
+
+    #card-3-back
+    {
+        
+       
+    }
+
+    #card-4-front
+    {
+        
+       
+    }
+
+    #card-4-back
+    {
+        
+       
+    }
+
+    /*Cards have images when flipped*/
+    .card-images
+    {
+        margin-top: 10px; 
+        border: 1px black solid;
+
+    }
+
+    /*Sets the card text, format, and style*/
+    .card-text
+    {
+        padding: 5px;
+        font-family: "verdana";
+        font-size: 14px;
+        color: white;
+        text-shadow: 2px 2px #000
+    }
+
+
+
+    /*Settings and classes Used to animate the cards*/
+    .flip-container
+    {
+        perspective: 1000px;
+        width: 100%;
+        margin: 20px;
+        float: left;
+    }
+
+
+    /*Settings and classes Used to animate the cards*/
+    /*Uses the transform property from css*/
+    .flip-containter .flipper, .state-flipped.flip-container .flipper
+    {
+        transform: rotateY(180deg);
+
+    }
+
+
+
+    .flip-container, .front, .back
+    {
+        
+        width: 270px;
+        height: 365px;    
+        text-align: center;
+    }
+
+    /* flip speed goes here for the cards */
+    .flipper
+    {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+        
+    }
+
+
+    /*Adds additional properties for the cards such as
+    border radius, border color, and box shadows to give them depth*/
+    .front, .back
+    {
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        position: absolute; 
+        border: black 1px solid;
+        border-radius: 10px;
+        box-shadow: 20px 20px 10px #555;
+
+    }
+
+
+    /*Uses CSS transformation properties and an image background for the front of the cards*/
+    .front
+    {
+        z-index: 2;
+        transform: rotateY(0deg);
+        background: #1e5799; /* Old browsers */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+        background-image: url("images/card-pattern.jpg");
+        background-repeat: repeat-y;
+        color: white;
+
+
+    }
+
+
+    /*Uses gradients, transforpmation properties for the back of the  cards*/
+    .back
+    {
+        transform: rotateY(180deg);
+        background: #b5bdc8; /* Old browsers */
+        background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+        background: -webkit-linear-gradient(top, #b5bdc8 0%,#828c95 36%,#28343b 100%); 
+        background: linear-gradient(to bottom, #b5bdc8 0%,#828c95 36%,#28343b 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); 
+    }
+
+
+    .content-container
+    {
+        background-color: white;
+        margin: 0 0 auto;
+        height: 100%;
+        width: 100%;    
+    }
+
+
+    .content-item
+    {
+        width:100%;
+        margin-top: 100px;   
+    }
+
+    .content-wrapper
+    {
+        background-color:white;
+        padding: 15px;
+        height: 100%;
+    }
+
+    #content-item-1
+    {
+        background-color: white;
+    }
+
+    #content-item-2
+    {
+        background-color: white;
+    }
+
+
+    #content-item-3
+    {
+        background-color: white;
+    }
+
+    #content-item-4
+    {
+        background-color: white;
+    }
+
+
+    .content-text
+    {
+        padding: 5px;
+        font-family: "verdana";
+        font-size: 14px;
+    }
+
+
+

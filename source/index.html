@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--CSPB 3308 Rodrigo H. Garcia -->
+<!--10/18/2019 -->
+
+
+<link rel="stylesheet" href="source/menu.css">
+
+
+
+</head>
+<html>
+    <body>
+    <header>
+        <div class="header-logo-container">
+            <img src="images/lion-vector.png" width="128" height="128">
+            <div class="header-banner-text">Welcome to the Lion' Den!</div>
+            <div id="css-file-link"><a href="source/menu.css">View my CSS file!</a></div>
+
+        </div>
+    
+        <div id = "menu" class="menu-container">
+            <div  id= "menu-item-1" class="menu-item">
+                <p class="menu-item-1-paragraph" class="menu-item-paragraph">
+                    <a href="#content-item-1"> Section 1</a>
+                </p>
+            </div>
+
+            <div  id= "menu-item-2" class="menu-item">
+                <p class="menu-item-text">
+                    <a href="#content-item-2"> Section 2</a>
+                </p>
+            </div>
+            
+            <div  id= "menu-item-3" class="menu-item">
+                <p class="menu-item-text"> 
+                    <a href="#content-item-3"> Section 3</a>
+                </p>
+            </div>
+    
+            <div  id= "menu-item-4" class="menu-item">
+                <p class="menu-item-text">
+                    <a href="#content-item-4"> Section 4</a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+        <div id = "card-container " class="card-container">
+            <div class="flip-container" id="flip-toggle1" ontouchstart="this.classList.toggle('hover');" onclick="flipCard1()">
+                <div class = "flipper">
+                    <div id ="card-1-front" class = "front">
+                        <p id = "card-text-1" class ="card-text">
+                            <h3>Click Here For Fun Facts!</h3>
+                        </p>
+                    </div>
+                    <div id ="card-1-back" class = "back">
+                        <img src="images/white-lion.jpg" width="152" height="152" class="card-images">
+                        <p id = "card-text-1" class ="card-text">
+                            White Lions are not albinos, but a genetic rarity unique to one endemic region on the globe: the Timbavati region.The Genetic Marker that makes White Lions unique has not yet been identified by science.  The white coat color of these lions is often attributed to a genetic condition called 'leucism'.
+
+                            
+                        </p>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="flip-container" id="flip-toggle2" ontouchstart="this.classList.toggle('hover');" onclick="flipCard2()">
+                <div class = "flipper">
+                    <div id ="card-2-front" class = "front">
+                        <p id = "card-text-2" class ="card-text">
+                            <h3>Click Here For Fun Facts!</h3>
+                        </p>
+                    </div>
+                    <div id ="card-2-back" class = "back">
+                        <img src="images/cheetah.jpg" width="152" height="152" class="card-images">
+                        <p id = "card-text-2" class ="card-text">
+                            Cheetahs are part of the big cat family and while they can't climb trees, they can run faster than any other land animal. Read on for more interesting cheetah information. The cheetah is the fastest land animal in the world. They can reach a top speed of around 113 km per hour.
+                        </p>
+                    </div>      
+                </div>
+            </div>
+
+           <div class="flip-container" id="flip-toggle3" ontouchstart="this.classList.toggle('hover');" onclick="flipCard3()">
+                <div class = "flipper">
+                    <div id ="card-3-front" class = "front">
+                        <p id = "card-text-3" class ="card-text">
+                            <h3>Click Here For Fun Facts!</h3>
+                        </p>
+                    </div>
+                    <div id ="card-3-back" class = "back">
+                        <img src="images/water-tiger.png" width="152" height="152" class="card-images">
+                        <p id = "card-text-3" class ="card-text">
+                            Tigers are good swimmers and can swim up to 6 kilometres. Rare white tigers carry a gene that is only present in around 1 in every 10000 tigers. Tigers usually hunt alone at night time. Tigers have been known to reach speeds up to 65 kph (40 mph).
+                        </p>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="flip-container" id="flip-toggle4" ontouchstart="this.classList.toggle('hover');" onclick="flipCard4()">
+                <div class = "flipper">
+                    <div id ="card-4-front" class = "front">
+                        <p id = "card-text-4" class ="card-text">
+                            <h3>Click Here For Fun Facts!</h3>
+                        </p>
+                    </div>
+                    <div id ="card-4-back" class = "back">
+                        <img src="images/black-puma.jpg" width="152" height="152" class="card-images">
+                        <p id = "card-text-4" class ="card-text">
+                            Mountain lions or pumas are the fourth heaviest in the world after the tiger, lion and jaguar.Pumas are powerfully built, with large paws and sharp claws. Their hind legs are larger and more muscular than their front legs to give them great jumping power. Pumas can run up to 80 km/h (50 mph) and jump as high as 4.6 meters (15 feet).
+                        </p>
+                    </div>      
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+         <div id = "content" class="content-container">
+            <div id ="content-item-1" class = "content-item">
+                 <div class="content-wrapper">
+                    <p id = "content-text-1" class ="content-text">
+                        <h3>Section 1</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies integer quis auctor elit sed vulputate mi sit amet. Viverra nibh cras pulvinar mattis nunc. Odio ut enim blandit volutpat maecenas volutpat blandit. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Pharetra et ultrices neque ornare aenean euismod elementum. Aliquam purus sit amet luctus venenatis lectus. Felis eget velit aliquet sagittis id. Aenean et tortor at risus. Cursus vitae congue mauris rhoncus. Massa tincidunt dui ut ornare. Varius duis at consectetur lorem donec massa. Non curabitur gravida arcu ac tortor. Tincidunt eget nullam non nisi est. Vitae auctor eu augue ut lectus arcu bibendum. Aliquam etiam erat velit scelerisque. Mauris augue neque gravida in fermentum et sollicitudin ac orci. Morbi tristique senectus et netus et. Aliquet eget sit amet tellus cras adipiscing.
+
+                        Non sodales neque sodales ut etiam. Libero enim sed faucibus turpis in eu mi bibendum neque. Facilisis volutpat est velit egestas. Tellus mauris a diam maecenas. Sed turpis tincidunt id aliquet risus feugiat in. Porttitor rhoncus dolor purus non enim praesent. Neque laoreet suspendisse interdum consectetur libero id faucibus. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Viverra nibh cras pulvinar mattis nunc sed blandit. Donec et odio pellentesque diam volutpat commodo. Est ante in nibh mauris. Nullam vehicula ipsum a arcu cursus vitae congue. Euismod elementum nisi quis eleifend quam adipiscing. Phasellus vestibulum lorem sed risus ultricies tristique. Ut faucibus pulvinar elementum integer enim neque volutpat. In arcu cursus euismod quis. Dui nunc mattis enim ut tellus elementum sagittis. Aliquam nulla facilisi cras fermentum odio. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
+
+                        Dignissim convallis aenean et tortor at risus viverra. Semper viverra nam libero justo laoreet. Morbi tincidunt ornare massa eget. Amet justo donec enim diam vulputate ut pharetra sit. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tristique senectus et netus et malesuada. Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget. Egestas congue quisque egestas diam in arcu cursus euismod quis. Convallis tellus id interdum velit laoreet id. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Volutpat ac tincidunt vitae semper quis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Est sit amet facilisis magna etiam tempor orci eu. Diam quam nulla porttitor massa id. Euismod in pellentesque massa placerat.
+
+                        Eros in cursus turpis massa tincidunt. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Dictum sit amet justo donec enim diam vulputate ut pharetra. Donec ultrices tincidunt arcu non sodales neque sodales. Pellentesque dignissim enim sit amet venenatis. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Tempus imperdiet nulla malesuada pellentesque elit eget. Mollis nunc sed id semper risus in hendrerit gravida. Est velit egestas dui id. Lacus vel facilisis volutpat est velit egestas dui id. Vivamus arcu felis bibendum ut tristique et egestas. Et netus et malesuada fames ac. Quam quisque id diam vel quam elementum. Vel eros donec ac odio. Massa vitae tortor condimentum lacinia. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. A diam maecenas sed enim ut sem viverra aliquet. Fames ac turpis egestas maecenas pharetra convallis posuere morbi. Ultrices neque ornare aenean euismod elementum.
+
+                        Morbi tristique senectus et netus et malesuada fames. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Adipiscing at in tellus integer. Purus in mollis nunc sed id semper. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Nulla aliquet enim tortor at auctor. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Velit sed ullamcorper morbi tincidunt ornare. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In est ante in nibh mauris. Sed vulputate mi sit amet mauris commodo. Mauris cursus mattis molestie a iaculis. In hac habitasse platea dictumst vestibulum. Nibh tellus molestie nunc non blandit massa enim. Elit scelerisque mauris pellentesque pulvinar. Porttitor eget dolor morbi non arcu risus. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Pretium lectus quam id leo in vitae turpis.
+                    </p>
+                </div>
+            </div>
+
+            <div id ="content-item-2" class = "content-item">
+                <div class="content-wrapper">
+                    <p id = "content-text-2" class ="content-text">
+                        <h3>Section 2</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies integer quis auctor elit sed vulputate mi sit amet. Viverra nibh cras pulvinar mattis nunc. Odio ut enim blandit volutpat maecenas volutpat blandit. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Pharetra et ultrices neque ornare aenean euismod elementum. Aliquam purus sit amet luctus venenatis lectus. Felis eget velit aliquet sagittis id. Aenean et tortor at risus. Cursus vitae congue mauris rhoncus. Massa tincidunt dui ut ornare. Varius duis at consectetur lorem donec massa. Non curabitur gravida arcu ac tortor. Tincidunt eget nullam non nisi est. Vitae auctor eu augue ut lectus arcu bibendum. Aliquam etiam erat velit scelerisque. Mauris augue neque gravida in fermentum et sollicitudin ac orci. Morbi tristique senectus et netus et. Aliquet eget sit amet tellus cras adipiscing.
+
+                        Non sodales neque sodales ut etiam. Libero enim sed faucibus turpis in eu mi bibendum neque. Facilisis volutpat est velit egestas. Tellus mauris a diam maecenas. Sed turpis tincidunt id aliquet risus feugiat in. Porttitor rhoncus dolor purus non enim praesent. Neque laoreet suspendisse interdum consectetur libero id faucibus. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Viverra nibh cras pulvinar mattis nunc sed blandit. Donec et odio pellentesque diam volutpat commodo. Est ante in nibh mauris. Nullam vehicula ipsum a arcu cursus vitae congue. Euismod elementum nisi quis eleifend quam adipiscing. Phasellus vestibulum lorem sed risus ultricies tristique. Ut faucibus pulvinar elementum integer enim neque volutpat. In arcu cursus euismod quis. Dui nunc mattis enim ut tellus elementum sagittis. Aliquam nulla facilisi cras fermentum odio. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
+
+                        Dignissim convallis aenean et tortor at risus viverra. Semper viverra nam libero justo laoreet. Morbi tincidunt ornare massa eget. Amet justo donec enim diam vulputate ut pharetra sit. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tristique senectus et netus et malesuada. Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget. Egestas congue quisque egestas diam in arcu cursus euismod quis. Convallis tellus id interdum velit laoreet id. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Volutpat ac tincidunt vitae semper quis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Est sit amet facilisis magna etiam tempor orci eu. Diam quam nulla porttitor massa id. Euismod in pellentesque massa placerat.
+
+                        Eros in cursus turpis massa tincidunt. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Dictum sit amet justo donec enim diam vulputate ut pharetra. Donec ultrices tincidunt arcu non sodales neque sodales. Pellentesque dignissim enim sit amet venenatis. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Tempus imperdiet nulla malesuada pellentesque elit eget. Mollis nunc sed id semper risus in hendrerit gravida. Est velit egestas dui id. Lacus vel facilisis volutpat est velit egestas dui id. Vivamus arcu felis bibendum ut tristique et egestas. Et netus et malesuada fames ac. Quam quisque id diam vel quam elementum. Vel eros donec ac odio. Massa vitae tortor condimentum lacinia. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. A diam maecenas sed enim ut sem viverra aliquet. Fames ac turpis egestas maecenas pharetra convallis posuere morbi. Ultrices neque ornare aenean euismod elementum.
+
+                        Morbi tristique senectus et netus et malesuada fames. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Adipiscing at in tellus integer. Purus in mollis nunc sed id semper. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Nulla aliquet enim tortor at auctor. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Velit sed ullamcorper morbi tincidunt ornare. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In est ante in nibh mauris. Sed vulputate mi sit amet mauris commodo. Mauris cursus mattis molestie a iaculis. In hac habitasse platea dictumst vestibulum. Nibh tellus molestie nunc non blandit massa enim. Elit scelerisque mauris pellentesque pulvinar. Porttitor eget dolor morbi non arcu risus. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Pretium lectus quam id leo in vitae turpis.
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div id ="content-item-3" class = "content-item">
+                 <div class="content-wrapper">
+                    <p id = "content-text-3" class ="content-text">
+                        <h3>Section 3</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies integer quis auctor elit sed vulputate mi sit amet. Viverra nibh cras pulvinar mattis nunc. Odio ut enim blandit volutpat maecenas volutpat blandit. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Pharetra et ultrices neque ornare aenean euismod elementum. Aliquam purus sit amet luctus venenatis lectus. Felis eget velit aliquet sagittis id. Aenean et tortor at risus. Cursus vitae congue mauris rhoncus. Massa tincidunt dui ut ornare. Varius duis at consectetur lorem donec massa. Non curabitur gravida arcu ac tortor. Tincidunt eget nullam non nisi est. Vitae auctor eu augue ut lectus arcu bibendum. Aliquam etiam erat velit scelerisque. Mauris augue neque gravida in fermentum et sollicitudin ac orci. Morbi tristique senectus et netus et. Aliquet eget sit amet tellus cras adipiscing.
+
+                        Non sodales neque sodales ut etiam. Libero enim sed faucibus turpis in eu mi bibendum neque. Facilisis volutpat est velit egestas. Tellus mauris a diam maecenas. Sed turpis tincidunt id aliquet risus feugiat in. Porttitor rhoncus dolor purus non enim praesent. Neque laoreet suspendisse interdum consectetur libero id faucibus. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Viverra nibh cras pulvinar mattis nunc sed blandit. Donec et odio pellentesque diam volutpat commodo. Est ante in nibh mauris. Nullam vehicula ipsum a arcu cursus vitae congue. Euismod elementum nisi quis eleifend quam adipiscing. Phasellus vestibulum lorem sed risus ultricies tristique. Ut faucibus pulvinar elementum integer enim neque volutpat. In arcu cursus euismod quis. Dui nunc mattis enim ut tellus elementum sagittis. Aliquam nulla facilisi cras fermentum odio. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
+
+                        Dignissim convallis aenean et tortor at risus viverra. Semper viverra nam libero justo laoreet. Morbi tincidunt ornare massa eget. Amet justo donec enim diam vulputate ut pharetra sit. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tristique senectus et netus et malesuada. Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget. Egestas congue quisque egestas diam in arcu cursus euismod quis. Convallis tellus id interdum velit laoreet id. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Volutpat ac tincidunt vitae semper quis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Est sit amet facilisis magna etiam tempor orci eu. Diam quam nulla porttitor massa id. Euismod in pellentesque massa placerat.
+
+                        Eros in cursus turpis massa tincidunt. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Dictum sit amet justo donec enim diam vulputate ut pharetra. Donec ultrices tincidunt arcu non sodales neque sodales. Pellentesque dignissim enim sit amet venenatis. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Tempus imperdiet nulla malesuada pellentesque elit eget. Mollis nunc sed id semper risus in hendrerit gravida. Est velit egestas dui id. Lacus vel facilisis volutpat est velit egestas dui id. Vivamus arcu felis bibendum ut tristique et egestas. Et netus et malesuada fames ac. Quam quisque id diam vel quam elementum. Vel eros donec ac odio. Massa vitae tortor condimentum lacinia. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. A diam maecenas sed enim ut sem viverra aliquet. Fames ac turpis egestas maecenas pharetra convallis posuere morbi. Ultrices neque ornare aenean euismod elementum.
+
+                        Morbi tristique senectus et netus et malesuada fames. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Adipiscing at in tellus integer. Purus in mollis nunc sed id semper. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Nulla aliquet enim tortor at auctor. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Velit sed ullamcorper morbi tincidunt ornare. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In est ante in nibh mauris. Sed vulputate mi sit amet mauris commodo. Mauris cursus mattis molestie a iaculis. In hac habitasse platea dictumst vestibulum. Nibh tellus molestie nunc non blandit massa enim. Elit scelerisque mauris pellentesque pulvinar. Porttitor eget dolor morbi non arcu risus. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Pretium lectus quam id leo in vitae turpis.
+                        
+
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div id ="content-item-4" class = "content-item">
+                 <div class="content-wrapper">
+                    <p id = "content-text-4" class ="content-text">
+                        <h3>Section 4</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies integer quis auctor elit sed vulputate mi sit amet. Viverra nibh cras pulvinar mattis nunc. Odio ut enim blandit volutpat maecenas volutpat blandit. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Pharetra et ultrices neque ornare aenean euismod elementum. Aliquam purus sit amet luctus venenatis lectus. Felis eget velit aliquet sagittis id. Aenean et tortor at risus. Cursus vitae congue mauris rhoncus. Massa tincidunt dui ut ornare. Varius duis at consectetur lorem donec massa. Non curabitur gravida arcu ac tortor. Tincidunt eget nullam non nisi est. Vitae auctor eu augue ut lectus arcu bibendum. Aliquam etiam erat velit scelerisque. Mauris augue neque gravida in fermentum et sollicitudin ac orci. Morbi tristique senectus et netus et. Aliquet eget sit amet tellus cras adipiscing.
+
+                        Non sodales neque sodales ut etiam. Libero enim sed faucibus turpis in eu mi bibendum neque. Facilisis volutpat est velit egestas. Tellus mauris a diam maecenas. Sed turpis tincidunt id aliquet risus feugiat in. Porttitor rhoncus dolor purus non enim praesent. Neque laoreet suspendisse interdum consectetur libero id faucibus. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Viverra nibh cras pulvinar mattis nunc sed blandit. Donec et odio pellentesque diam volutpat commodo. Est ante in nibh mauris. Nullam vehicula ipsum a arcu cursus vitae congue. Euismod elementum nisi quis eleifend quam adipiscing. Phasellus vestibulum lorem sed risus ultricies tristique. Ut faucibus pulvinar elementum integer enim neque volutpat. In arcu cursus euismod quis. Dui nunc mattis enim ut tellus elementum sagittis. Aliquam nulla facilisi cras fermentum odio. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
+
+                        Dignissim convallis aenean et tortor at risus viverra. Semper viverra nam libero justo laoreet. Morbi tincidunt ornare massa eget. Amet justo donec enim diam vulputate ut pharetra sit. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tristique senectus et netus et malesuada. Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget. Egestas congue quisque egestas diam in arcu cursus euismod quis. Convallis tellus id interdum velit laoreet id. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Volutpat ac tincidunt vitae semper quis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Est sit amet facilisis magna etiam tempor orci eu. Diam quam nulla porttitor massa id. Euismod in pellentesque massa placerat.
+
+                        Eros in cursus turpis massa tincidunt. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Dictum sit amet justo donec enim diam vulputate ut pharetra. Donec ultrices tincidunt arcu non sodales neque sodales. Pellentesque dignissim enim sit amet venenatis. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Tempus imperdiet nulla malesuada pellentesque elit eget. Mollis nunc sed id semper risus in hendrerit gravida. Est velit egestas dui id. Lacus vel facilisis volutpat est velit egestas dui id. Vivamus arcu felis bibendum ut tristique et egestas. Et netus et malesuada fames ac. Quam quisque id diam vel quam elementum. Vel eros donec ac odio. Massa vitae tortor condimentum lacinia. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. A diam maecenas sed enim ut sem viverra aliquet. Fames ac turpis egestas maecenas pharetra convallis posuere morbi. Ultrices neque ornare aenean euismod elementum.
+
+                        Morbi tristique senectus et netus et malesuada fames. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Adipiscing at in tellus integer. Purus in mollis nunc sed id semper. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Nulla aliquet enim tortor at auctor. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Velit sed ullamcorper morbi tincidunt ornare. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In est ante in nibh mauris. Sed vulputate mi sit amet mauris commodo. Mauris cursus mattis molestie a iaculis. In hac habitasse platea dictumst vestibulum. Nibh tellus molestie nunc non blandit massa enim. Elit scelerisque mauris pellentesque pulvinar. Porttitor eget dolor morbi non arcu risus. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Pretium lectus quam id leo in vitae turpis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </body>
+    </html>
+
+<Script>
+    function flipCard1()
+    {
+        document.querySelector('#flip-toggle1').classList.toggle('state-flipped'); 
+    }
+
+    function flipCard2()
+    {
+        document.querySelector('#flip-toggle2').classList.toggle('state-flipped'); 
+    }
+
+    function flipCard3()
+    {
+        document.querySelector('#flip-toggle3').classList.toggle('state-flipped'); 
+    }
+
+    function flipCard4()
+    {
+        document.querySelector('#flip-toggle4').classList.toggle('state-flipped'); 
+    }
+</Script>
+
+
+
+
+
+
+

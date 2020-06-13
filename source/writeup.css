@@ -1,0 +1,35 @@
+Part 1
+
+2a) You can use the "background-color" css rule to change the background of the Div1 element.
+
+2b) You can specify the div element by using the id tag of the element and writing it to a css file in the followig way
+
+#div1{
+
+	background-color: beige;
+
+}
+
+2c) Margin is the space around the outside of an HTML elment.  The padding is the inner space of an HTML element.
+
+3a) As the paragraph margins grow, it will begin shifting insid the parent div element to accomodate the larger and larger margin requirements.  The background of the paragraph will eventually disappear and "Squeeze out" the content
+of the paragraph element which will overflow from parent element.
+
+3b) With the padding set to 100px the paragraph element padding will grow to spill outide the parent div elment. Setting the overflow of div1 to "hidden" will cause the overflow of the padding to be "cloaked" inside the
+parent div element.  The Div will now only show what is inside the visible portion of the div.  Setting the overflow to "scroll" will perform the same effect as hidden except now the user can "scroll" inside
+the div element to see the oversized contents behind/inside the parent element.  X and Y scrollbars will appear indicating the div's content is scrollable for viewing.
+
+
+4a) Using float left on the div elements will order them from top to bottom, that is, they will appear in the following order div1 (left most element), div2 (middle left most element), div3 (last left most element).
+Using float right will order them in a similar way but on the right side of the screen: div1 (right most element), div2 (middle right most element), div3 (last right most element).
+
+4b) 
+Giving div1 the float left, clear right characterisitc will put it at the opposite (left most side) of the screen, with div2 on the right most side of the screen followed by div3.
+Giving div2 the float left, clear right characteristic will put div2, on the left hand side but shifted down one "box" of space. Div1 will be on the right most side but div3 will be beneath it.
+Giving div3 the float left, clear right characteristic will put div3, on the left hand side but shifted down one "box" of space. Div1 will be on the right most side followed by div2 next to div1.
+
+5) Giving the body of the html page a margin of 0 pushes the div elements outward towards the edge.  This means that the body element of the html page has some margin value built in to its default state.
+
+
+
+ 
